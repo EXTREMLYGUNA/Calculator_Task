@@ -5,7 +5,7 @@
   background-color:whitesmoke;
   font-family: sans-serif;
   outline:none;
-}
+}  
 body{
   background: linear-gradient(to right top, #556173, #6f808e, #8da0a9, #aec0c5, #d2e1e2);
 }
@@ -15,11 +15,11 @@ body{
   width: 280px;
   justify-content:center;
   align-items:center;
-
 }
-.calculator{
+#calculator{
   background-color:rgb(55, 5, 5);
   padding:30px;
+  width: 270px;
   border-radius:15px;
   box-shadow: inset -4px -5px 6px black,
                 inset 2px 2px 6px black;
@@ -31,15 +31,16 @@ input{
   grid-column:span 4;
   height:40px;
   width:210px;
-  background-color:rgb(189, 189, 189);
-  box-shadow: inset -6px -5px 6px black,
-                inset 2px -5px 6px black;
+  background-color:rgb(246, 241, 241);
+  /*box-shadow: inset -6px -5px 6px black,
+                inset 2px -5px 6px black;*/
   border:none;
-  border-radius:10px;
+  border-radius:5px;
   font-size:30px;
   text-align: end;
   margin-top: -10px;
   margin-bottom:30px;
+  margin-left: -8px;
 }
 button{
   height:45px;
@@ -51,12 +52,19 @@ button{
   border:5px;
   margin:8px;
   cursor:pointer;
+  
+}
+button:active{
+  transform: translateY(3px);
+}
+button:hover{
+  background-color: blue;
 }
 #equal{
-  width:100px;
+  width:90px;
   color: rgb(13, 13, 13);
   background-color: green;
-  border-radius: 30px;
+  border-radius: 10px;
   box-shadow: inset -4px -5px 6px black,
   inset 2px 2px 6px black;
 }
